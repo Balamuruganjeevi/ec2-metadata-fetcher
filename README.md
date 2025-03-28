@@ -1,7 +1,7 @@
 # ec2-metadata-fetcher
 DevOps Technical Assessment – AWS EC2 Instance Metadata Fetcher
 
-Steps to create and install 
+#Steps to create and install 
 Prerequisites
 
 ✅ Docker
@@ -12,14 +12,14 @@ Prerequisites
 ✅ Minikube
 ✅ Helm
 
-Step 1: Set Up LocalStack
-Step 2: Create the Python Script
+#Step 1: Set Up LocalStack
+#Step 2: Create the Python Script
   Create a file fetch_metadata.py
   Run the script:
   python fetch_metadata.py IMDSv2
-Step 3: Create Dockerfile
+#Step 3: Create Dockerfile
   Create a Dockerfile:
-Step 4: Build and Push Docker Image
+#Step 4: Build and Push Docker Image
 Build the Docker image:
   docker build -t <your-dockerhub-username>/ec2-metadata-fetcher .
 Log in to Docker Hub:
@@ -28,11 +28,11 @@ Push the image:
   docker push <your-dockerhub-username>/ec2-metadata-fetcher
 Test the image:
   docker run --rm <your-dockerhub-username>/ec2-metadata-fetcher IMDSv2
-Step 5: Create Helm Chart
+#Step 5: Create Helm Chart
   helm create ec2-metadata-chart
   Update values.yaml
   Update templates/deployment.yaml
-Step 6: Install the Helm Chart
+#Step 6: Install the Helm Chart
 Package the chart:
   helm package .
 Install it on Minikube:
