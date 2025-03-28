@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: balajeevidesh4010/ec2-metadata-fetcher
+  pullPolicy: IfNotPresent
+  tag: "latest"
+service:
+  type: ClusterIP
+  port: 8080
+
